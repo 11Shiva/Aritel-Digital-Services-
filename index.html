@@ -1,70 +1,144 @@
-Done. I’ve updated the contact details to:
-Email: 295vishwakarma@gmail.com
-Phone: +91-9617556726
-Writing
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Aritel Digital Services</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professional Website Development and Digital Services for Businesses.">
+
+    <title>Aritel Digital Services</title>
+
+    <meta name="description"
+        content="Aritel Digital Services provides website development, e-commerce setup, social media management and website maintenance services.">
 
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             line-height: 1.6;
+            color: #1e293b;
+            background: #ffffff;
         }
 
         header {
             background: #0f172a;
             color: white;
-            padding: 30px;
+            padding: 45px 20px;
             text-align: center;
+        }
+
+        header h1 {
+            margin: 0 0 10px;
+            font-size: 32px;
+        }
+
+        header p {
+            margin: 0;
+            font-size: 16px;
         }
 
         nav {
             background: #1e293b;
-            padding: 10px;
+            padding: 14px 10px;
             text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
         }
 
         nav a {
             color: white;
-            margin: 0 15px;
+            margin: 0 12px;
             text-decoration: none;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
         }
 
         section {
-            padding: 40px 20px;
+            padding: 50px 20px;
             max-width: 1000px;
             margin: auto;
         }
 
         h2 {
             color: #0f172a;
+            margin-bottom: 20px;
         }
 
         .services {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
             gap: 20px;
         }
 
         .card {
             border: 1px solid #ddd;
-            padding: 20px;
+            padding: 25px;
             border-radius: 10px;
             background: #f8fafc;
+        }
+
+        .card h3 {
+            margin-top: 0;
+            color: #0f172a;
+        }
+
+        .contact-box {
+            background: #f8fafc;
+            border: 1px solid #ddd;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        .contact-box a {
+            color: #0f172a;
+            font-weight: bold;
+        }
+
+        .buttons {
+            margin-top: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 20px;
+            margin: 5px;
+            border-radius: 6px;
+            text-decoration: none;
+            color: white;
+            background: #0f172a;
         }
 
         footer {
             background: #0f172a;
             color: white;
             text-align: center;
-            padding: 20px;
+            padding: 25px 15px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 26px;
+            }
+
+            nav a {
+                margin: 0 6px;
+                font-size: 13px;
+            }
+
+            section {
+                padding: 35px 15px;
+            }
         }
     </style>
 </head>
@@ -86,10 +160,12 @@ Writing
 
 <section id="about">
     <h2>About Us</h2>
+
     <p>
         Aritel Digital Services provides professional website development,
-        e-commerce setup, and digital marketing services. We help businesses
-        build a strong online presence with affordable and reliable solutions.
+        e-commerce setup, social media management and digital marketing
+        services. We help businesses build a strong online presence with
+        affordable and reliable solutions.
     </p>
 </section>
 
@@ -101,7 +177,7 @@ Writing
         <div class="card">
             <h3>Website Development</h3>
             <p>
-                Business websites, landing pages, and portfolio websites
+                Business websites, landing pages and portfolio websites
                 tailored to client needs.
             </p>
         </div>
@@ -109,7 +185,7 @@ Writing
         <div class="card">
             <h3>Social Media Management</h3>
             <p>
-                Content posting, marketing support, and profile optimization
+                Content posting, marketing support and profile optimization
                 services.
             </p>
         </div>
@@ -147,20 +223,51 @@ Writing
 <section id="contact">
     <h2>Contact Us</h2>
 
-    <p>Email: 295vishwakarma@gmail.com</p>
-    <p>Phone: +91-9617556726</p>
-    <p>Business Hours: Monday – Saturday, 10:00 AM – 6:00 PM</p>
+    <div class="contact-box">
+
+        <p>
+            <strong>Email:</strong>
+            <a href="mailto:295vishwakarma@gmail.com">
+                295vishwakarma@gmail.com
+            </a>
+        </p>
+
+        <p>
+            <strong>Phone:</strong>
+            <a href="tel:+919617556726">
+                +91-9617556726
+            </a>
+        </p>
+
+        <p>
+            <strong>Business Hours:</strong>
+            Monday – Saturday, 10:00 AM – 6:00 PM
+        </p>
+
+        <div class="buttons">
+            <a class="btn" href="tel:+919617556726">
+                📞 Call Now
+            </a>
+
+            <a class="btn" href="mailto:295vishwakarma@gmail.com">
+                ✉️ Email Us
+            </a>
+        </div>
+
+    </div>
 </section>
 
 <section id="policy">
 
     <h2>Refund Policy</h2>
+
     <p>
         Refunds are applicable only if services are not delivered as agreed.
         Clients must raise concerns within 5 days of service delivery.
     </p>
 
     <h2>Privacy Policy</h2>
+
     <p>
         Client information is used solely for communication and service
         delivery purposes. We do not share personal information with
@@ -168,9 +275,10 @@ Writing
     </p>
 
     <h2>Terms & Conditions</h2>
+
     <p>
-        All services are provided based on agreed project scope.
-        Any additional work beyond scope may incur extra charges.
+        All services are provided based on the agreed project scope.
+        Any additional work beyond the scope may incur extra charges.
     </p>
 
 </section>
@@ -181,4 +289,3 @@ Writing
 
 </body>
 </html>
-If you want, I can also �⁠add WhatsApp, Call Now, and Email buttons so customers can contact you directly from the website.
